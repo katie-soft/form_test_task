@@ -1,0 +1,94 @@
+@import 'burger-menu';
+
+.header {
+  width: 100%;
+  background-color: rgba(16, 16, 29, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  &__content {
+    @include horizontal-align;
+    @include flex-row-dist(5px);
+    max-width: $content-width;
+    padding: 38px 0;
+  }
+}
+
+.menu__list {
+  @include reset-list;
+  @include flex-row-dist(60px);
+  max-width: 435px;
+
+  .menu__link {
+    @include text-uppercase;
+    font-size: $min-font-size;
+    color: $accent-color-light;
+    position: relative;
+
+    &::after {
+      @include smooth-animation;
+      content: '';
+      width: 0px;
+      height: 1px;
+      background: currentColor;
+      position: absolute;
+      left: 0px;
+      bottom: -3px;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &_active {
+      color: #43ABF0;
+
+      &:hover::after {
+        width: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .header__content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .header__content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu {
+    @include smooth-animation;
+    position: absolute;
+    top: 80px;
+    right: -150px;
+    z-index: 3;
+
+    &_opened {
+      right: 25px;
+    }
+  }
+
+  .menu__list {
+    flex-direction: column;
+    gap: 30px;
+
+    .menu__link {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 365px) {
+  .header__logo img {
+    content: url('../img/favicon.png');
+  }
+}

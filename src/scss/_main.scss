@@ -1,0 +1,160 @@
+.section_type_intro {
+  background-image: url(../img/background_ppl.jpg);
+  background-repeat: no-repeat;
+}
+
+.intro__wrapper {
+  @include horizontal-align;
+  max-width: $content-width;
+  padding: 200px 0 200px 10px;
+}
+
+.page__title {
+  @include text-uppercase;
+  max-width: 780px;
+  font-size: 48px;
+  line-height: 57px;
+  font-weight: 700;
+  color: $accent-color-dark;
+  margin-bottom: 90px;
+}
+
+.text_color_prim {
+  color: $primary-color;
+}
+
+.intro__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.intro__list {
+  @include flex-column(5px);
+  @include reset-list;
+  margin-bottom: 80px;
+  margin-top: 10px;
+  font-size: 20px;
+
+  .list__item::before {
+    content: '-';
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.intro__btns {
+  @include flex-row(30px);
+}
+
+.section_type_form {
+  background-color: #272733;
+  background-image: url(../img/background_map.png);
+}
+
+.section__title {
+  @include text-uppercase;
+  font-size: 36px;
+  font-weight: 700;
+  color: $accent-color-light;
+  margin-bottom: 26px;
+}
+
+.section__subtitle {
+  font-size: 18px;
+  color: $secondary-color-light;
+  margin-bottom: 80px;
+}
+
+.form__wrapper {
+  @include horizontal-align;
+  @include flex-column-dist(5px);
+  max-width: $content-width;
+  padding-top: 121px;
+  padding-bottom: 150px;
+}
+
+@media (max-width: 1240px) {
+  .intro__wrapper {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .intro__wrapper {
+    padding-top: 150px;
+  }
+
+  .form__wrapper {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 100px;
+  }
+
+  .page__title {
+    max-width: 465px;
+    font-size: 32px;
+    line-height: 125%;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  .intro__subtitle {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+  }
+
+  .intro__list {
+    font-size: 16px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .section__title {
+    font-size: 32px;
+  }
+
+  .section__subtitle {
+    margin-bottom: 40px;
+    font-size: 15px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .intro__btns {
+    justify-content: center;
+  }
+
+  .form__wrapper {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .intro__wrapper {
+    padding: 100px 20px 60px;
+  }
+
+  .page__title {
+    font-size: 24px;
+  }
+
+  .intro__btns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .section__title {
+    font-size: 24px;
+  }
+}

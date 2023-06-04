@@ -1,0 +1,42 @@
+.burger-menu {
+  @include smooth-animation;
+  width: 200px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: -200px;
+  background-color: rgba(16, 16, 29, 0.9);
+
+  &_opened {
+    right: 0;
+  }
+}
+
+.burger-menu__btn {
+  @include smooth-animation;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  gap: 10px;
+  flex-direction: column;
+  display: none;
+  position: relative;
+  z-index: 3;
+  transform: rotate(0deg);
+
+  &_opened {
+    transform: rotate(90deg);
+  }
+}
+
+.burger-menu__line {
+    width: 100%;
+    height: 2px;
+    background-color: $accent-color-light;
+}
+
+@media (max-width: 800px) {
+  .burger-menu__btn {
+    display: flex;
+  }
+}
