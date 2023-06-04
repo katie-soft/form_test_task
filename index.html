@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoremIpsum</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../src/img/favicon.png"
+    />
+  <script defer src="bundle.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body class="page">
+    <header class="header">
+      <div class="header__content">
+        <a class="header__logo" href="#">
+          <img src="./img/logo.svg" alt="LOREMIPSUM.NET" />
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link_active" href="#">Бизнес</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Цены</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#order">Оформить заказ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-menu__btn">
+          <div class="burger-menu__line"></div>
+          <div class="burger-menu__line"></div>
+          <div class="burger-menu__line"></div>
+        </div>
+      </div>
+      <div class="burger-menu"></div>
+    </header>
+    <main class="content">
+      <section class="section section_type_intro">
+        <div class="intro__wrapper">
+          <h1 class="page__title">
+            <span class="text_color_prim">Lorem ipsum</span> dolor sit
+            ametconsectetur <span class="text_color_prim">adipiscing</span>
+          </h1>
+          <span class="intro__subtitle">
+            At vero eos et accusamus et iusto odio dignissimos ducimus!
+          </span>
+          <ul class="intro__list">
+            <li class="list__item">Totam rem aperiam eaque ipsa</li>
+            <li class="list__item">
+              Sit voluptatem accusantium doloremque laudantium
+            </li>
+            <li class="list__item">
+              Sed ut perspiciatis, unde omnis iste natus error
+            </li>
+          </ul>
+          <div class="intro__btns">
+            <button class="btn btn_color_primary">Заказать</button>
+            <button class="btn btn_color_light">Подробнее</button>
+          </div>
+        </div>
+      </section>
+      <section class="section section_type_form" id="order">
+        <div class="form__wrapper">
+          <h2 class="section__title">
+            Оформление <span class="text_color_prim">заказа</span>
+          </h2>
+          <span class="section__subtitle">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+          </span>
+          <div class="process">
+            <div class="process__step process__step_search">
+              <span class="process__comment">Lorem ipsum dolor sit amet</span>
+            </div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__step process__step_percent">
+              <span class="process__comment">Сonsecteturadipiscing elit</span>
+            </div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__step process__step_doc">
+              <span class="process__comment">Sed do eiusmod tempor</span>
+            </div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__step process__step_mail">
+              <span class="process__comment">Esse cillum dolore eu fugiat</span>
+            </div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__divider"></div>
+            <div class="process__step process__step_money">
+              <span class="process__comment"
+                >Excepteur sint occaecat cupidatat non proident</span
+              >
+            </div>
+          </div>
+          <form class="form" action="POST">
+            <div class="form__select-wrapper">
+              <input id="select" type="hidden" name="system" value="" />
+              <span id="select-value">Выберите тип системы</span>
+              <ul class="custom-select">
+                <li class="custom-select__option" data-value="sed">
+                  Sed ut perspiciatis
+                </li>
+                <li class="custom-select__option" data-value="nemo">
+                  Nemo enim ipsam
+                </li>
+                <li class="custom-select__option" data-value="et">
+                  Et harum quidem
+                </li>
+                <li class="custom-select__option" data-value="temp">
+                  Temporibus autem
+                </li>
+                <li class="custom-select__option" data-value="itaque">
+                  Itaque earum rerum
+                </li>
+                <li class="custom-select__option" data-value="except">
+                  Excepteur sint occaecat
+                </li>
+                <li class="custom-select__option" data-value="cupidat">
+                  Cupidatat non
+                </li>
+                <li class="custom-select__option" data-value="cillum">
+                  Cillum dolore
+                </li>
+                <li class="custom-select__option" data-value="proident">
+                  Proident fugiat
+                </li>
+                <li class="custom-select__option" data-value="lorem">
+                  Lorem ipsum
+                </li>
+              </ul>
+            </div>
+            <input
+              class="form__input form__input_type_text"
+              type="email"
+              name="email"
+              placeholder="Ваш e-mail"
+            />
+            <input
+              class="form__input form__input_type_text"
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+            />
+            <div class="form__range-wrapper">
+              <label class="form__label_type_range" for="range">
+                <span>Sed ut perspiciatis, unde omnis iste natus</span>
+                <span id="range-value">75%</span>
+              </label>
+              <input
+                class="form__input form__input_type_range"
+                type="range"
+                name="range"
+                id="range"
+                value="75"
+              />
+            </div>
+            <label class="form__label_type_file" for="file">
+              <img src="../src/img/icons/file_input.svg" alt="" />
+              <span>Прикрепить файл</span>
+            </label>
+            <input
+              class="form__input form__input_type_file"
+              type="file"
+              name="file"
+              id="file"
+              value=""
+            />
+            <input
+              class="form__submit btn btn_color_primary"
+              type="submit"
+              value="Отправить"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <span class="footer__trademark">
+          © 2018 «LOREMIPSUM.NET» Все права защищены.
+        </span>
+        <div class="footer__list-wrapper">
+          <div class="footer__divider"></div>
+          <ul class="footer__payment-list">
+            <li class="payment-list__item">
+              <img
+                class="footer__icon"
+                src="../form_test_task/blob/main/src/img/icons/Qiwi.svg"
+                alt="Qiwi"
+              />
+              Qiwi wallet
+            </li>
+            <li class="payment-list__item">
+              <img
+                class="footer__icon"
+                src="../src/img/icons/YMoney.svg"
+                alt="Yandex Money"
+              />
+              Yandex Money
+            </li>
+            <li class="payment-list__item">
+              <img
+                class="footer__icon"
+                src="../src/img/icons/WebMoney.svg"
+                alt="Web Money"
+              />
+              Web Money
+            </li>
+          </ul>
+          <div class="footer__divider"></div>
+          <ul class="footer__link-list">
+            <li class="link-list__item">
+              <img
+                class="footer__icon"
+                src="../src/img/icons/mail_blue.svg"
+                alt="mail"
+              />
+              <a class="link-list__link" href="mailto:info@ipsum228.com">
+                info@ipsum228.com
+              </a>
+            </li>
+            <li class="link-list__item">
+              <img
+                class="footer__icon"
+                src="../src/img/icons/VK.svg"
+                alt="VK"
+              />
+              <a class="link-list__link" href="vk.com">Мы вконтакте</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
