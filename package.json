@@ -2,13 +2,16 @@
   "name": "employcity_test_task",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://katie-soft.github.io/form_test_task/",
+  "repository": {
+    "url": "git+https://github.com/katie-soft/form_test_task.git"
+  },
+  "homepage": "https://katie-soft.github.io/form_test_task",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "webpack --mode=development",
     "dev": "webpack serve",
     "start": "webpack --watch",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
   "keywords": [],
