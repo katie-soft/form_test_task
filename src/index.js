@@ -77,7 +77,7 @@ burgerMenuBtn.addEventListener('click', () => {
 })
 
 document.addEventListener('click', (event) => {
-  if (event.target !== burgerMenuBtn && burgerMenu.classList.contains('burger-menu_opened')) {
+  if (event.target !== burgerMenuBtn && event.target.parentElement !== burgerMenuBtn && burgerMenu.classList.contains('burger-menu_opened')) {
     closeBurger();
   }
 })
